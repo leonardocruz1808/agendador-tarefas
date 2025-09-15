@@ -1,21 +1,17 @@
 package com.leonardo.agendadorDeTarefas.infrastructure.security;
 
 
-
-
 import com.leonardo.agendadorDeTarefas.infrastructure.business.dto.UsuarioDTO;
 import com.leonardo.agendadorDeTarefas.infrastructure.client.UsuarioClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import static io.jsonwebtoken.security.Keys.password;
 
 @Service
 public class UserDetailsServiceImpl  {
+
+
     @Autowired
     private UsuarioClient client;
 
